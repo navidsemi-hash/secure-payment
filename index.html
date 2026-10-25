@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fixing Secure Payments — Payjib Case Study</title>
+<title>Fixing Secure Payments: Friction to Conversion</title>
 <meta name="description" content="Case study: redesigning Payjib, a P2P escrow fintech, around visible trust — +36% MAU, +48% KYC completion, −62% support volume.">
+<link rel="icon" type="image/svg+xml" href="images/favicon-light.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/svg+xml" href="images/favicon-dark.svg" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Sans+SC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -1483,6 +1485,13 @@
   .tl10 div b{display:block;font-family:var(--mono);font-size:max(10px,.62vw);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:.4vh}
   .tl10 div.mid{background:var(--accent);color:#fff}
   .tl10 div.mid b{color:#fff}
+
+  /* ============ Password page · centered ============ */
+  .nda-gate{justify-content:center}
+  .nda-card{text-align:center;margin:0 auto}
+  .nda-card h1,.nda-card p{margin-left:auto;margin-right:auto}
+  .nda-input{text-align:center}
+  .nda-gate .nda-foot{justify-content:center}
 </style>
 </head>
 <body class="canvas-mode nda-locked">
@@ -1492,15 +1501,15 @@
   <div class="nda-card" id="ndaCard">
     <div class="nda-tag">Confidential · NDA</div>
     <h1 id="ndaTitle">Enter password to view</h1>
-    <p>This case study contains confidential Payjib research and product data. Please enter the password you were given.</p>
+    <p>This case study contains confidential research and product data. Please enter the password you were given.</p>
     <form class="nda-form" id="ndaForm" autocomplete="off">
       <input class="nda-input" id="ndaInput" type="password" placeholder="Password" aria-label="Password" autocomplete="off">
       <button class="nda-submit" type="submit">Unlock deck</button>
       <div class="nda-error" id="ndaError" role="alert"></div>
     </form>
-    <a class="nda-contact" href="mailto:hi@navidsemi.com">Request access</a>
+    <a class="nda-contact" href="mailto:contact@navidsemi.com">Request access</a>
   </div>
-  <div class="nda-foot"><span>Navid Semi · navidsemi.com</span><span>Payjib</span></div>
+  <div class="nda-foot"><span>Navid Semi · navidsemi.com</span></div>
 </div>
 
 <script>
